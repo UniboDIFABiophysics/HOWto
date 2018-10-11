@@ -75,3 +75,25 @@ Se voglio collegarlo ad una versione specifica, posso indicare il checkin specif
 
     <baseurl>/file/<nomefile>?ln=5-10&ci=<checkin code>
     
+## edit the structure of tickets
+
+The default ticket system have several rough edges that can be easily improved.
+
+### types of tickets
+
+One commeon thing is that for data analysis projects the standard tickets definition does not map well.
+This cna be changed in the `Admin` panel, following the `Tickets` link and then the `Common`.
+
+At this point one can edit the choices available when creating a new ticket.
+in particolar, possible kinds of tickets are:
+
+        set type_choices {
+           Code_Defect
+           Data_Issue
+           Theory_Issue
+           Paper_Issues
+           External_Feedback
+           Documentation
+           Feature_Request
+           Incident
+        }

@@ -58,3 +58,24 @@ https://datavizcatalogue.com/
 
 ### Visual Complexity
 http://www.visualcomplexity.com/vc/
+
+# Green Tea Press Free EBooks
+https://greenteapress.com/wp/
+
+### Think Python 2e: How To Think Like a Computer Scientist
+http://greenteapress.com/wp/think-python-2e/
+
+### Think Stats, 2nd Edition
+http://greenteapress.com/thinkstats2/index.html
+
+### Think Bayes: Bayesian Statistics in Python
+http://greenteapress.com/wp/think-bayes/
+
+### Think DSP: Digital Signal Processing in Python
+http://greenteapress.com/wp/think-dsp/
+
+### Modeling and Simulation in Python
+http://greenteapress.com/wp/modsimpy/
+
+### Think Complexity 2e: Exploring Complexity Science with Python
+http://greenteapress.com/wp/think-complexity/

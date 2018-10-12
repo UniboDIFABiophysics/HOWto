@@ -52,3 +52,9 @@ https://serialmentor.com/dataviz/
 
 ### Python Graph Gallery
 https://python-graph-gallery.com/
+
+### Data Visualization Catalogue
+https://datavizcatalogue.com/
+
+### Visual Complexity
+http://www.visualcomplexity.com/vc/

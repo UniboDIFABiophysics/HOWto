@@ -1,4 +1,14 @@
 
+# Physics
+
+## Motion Mountain
+http://www.motionmountain.net/
+
+## Physics LibreTexts Library
+https://phys.libretexts.org/
+
+# Various topics
+
 ## SELECT STAR - fondamentali di SQL
 https://selectstarsql.com/
 
@@ -32,3 +42,5 @@ https://christophm.github.io/interpretable-ml-book/
 ## Foundations of data science book
 https://www.cs.cornell.edu/jeh/book%20July%202018.pdf
 
+## Xenographics - Weird but (sometimes) useful charts
+https://xeno.graphics/

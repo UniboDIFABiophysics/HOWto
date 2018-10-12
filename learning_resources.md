@@ -37,7 +37,11 @@ https://christophm.github.io/interpretable-ml-book/
 ### Foundations of data science book
 https://www.cs.cornell.edu/jeh/book%20July%202018.pdf
 
+### Bayesian methods for hackers
+http://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/
 
+### Python Data Science Handbook
+https://jakevdp.github.io/PythonDataScienceHandbook/
 
 # Visualization And Graphics
 

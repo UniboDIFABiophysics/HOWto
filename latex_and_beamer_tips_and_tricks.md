@@ -20,3 +20,9 @@ For example, to have the numbers without any sign, where there are at most 4 and
     particelle $\alpha$ & $\alpha$ & +2 & 6.647$\cdot  10^{-27}$& 3727.3 \\
     neutroni & n  & 0 & 1.675$\cdot  10^{-27}$ & 939.6       
     \end{tabular}
+
+## good practices for writing scientific LaTeX documents
+
+with figures generated in Python or Matlab. 
+
+https://github.com/Wookai/paper-tips-and-tricks

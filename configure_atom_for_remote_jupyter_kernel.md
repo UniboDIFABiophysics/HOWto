@@ -1,38 +1,34 @@
-## ATTIVARE ACCESSO SSH SENZA PASSWORD (token)
+## ACTIVATE THE PASSWORD-LESS ACCESS TO THE SERVER (TOKEN)
 https://debian-administration.org/article/530/SSH_with_authentication_key_instead_of_password
 
-## AGGIUNGERE IL REMOTE SERVER NEL SSH CONFIG CON IL PORT FORWARD
-    Host bio6
-        HostName    <bio6 ip address>
+## ADD THE REMOTE SERVER TO THE SSH CONFIG WITH THE PORT FORWARD ACTIVATED
+you have to pick a `<server name>` that is easy to remember, and a a port (both in your local computer and in the remote server) for the ssh port forwarding. In the remote server, make sure that the port does not conflict with other users' selection, so avoid the default '8888' and similar that are normally used by jupyter.
+
+    Host <server name>
+        HostName    <server ip address>
         User    <your unibo username>
-        LocalForward    8888 localhost:8888
+        LocalForward    <chosen local port> localhost:<chosen remote port>
 
-## FARE IL LOGIN DAL PC LOCAL PER ATTIVARE IL PORT FORWARD
+## LOGIN FROM THE LOCAL PC TO THE REMOTE SERVER TO ACTIVATE THE PORT-FORWARD
+    ssh <server name>
 
-    ssh bio6
-
-## CREARE SUL SERVER IL FILE DI CONFIGURAZIONE DEL NOTEBOOK SERVER
-
+## CREATE ON THE REMOTE SERVER A CONFIGURATION FILE FOR THE NOTEBOOK SERVER
     jupyter notebook --generate-config
 
-## MODIFICARE IL FILE DI CONFIGURAZIONE
-
+## MODIFY THE CONFIGURATION FILE TO ADD A FIXED TOKEN
 in `~/.jupyter/jupyter_notebook_config.py`
-settare:
+set:
 
     c.NotebookApp.token = '<my_secret_token>'
 
-## FAR PARTIRE IL KERNEL REMOTO
+## START THE REMOTE KERNEL
+    jupyter notebook --port=<chosen remote port> --no-browser
 
-    jupyter notebook --port=8888 --no-browser
+## CONFIGURE ATOM HYDROGEN TO USE THE REMOTE GATEWAY
+insert in the "remote gateway" section the following:
 
-## CONFIGURARE SU ATOM HYDROGEN IL REMOTE GATEWAY
+    [{ "name": "remote kernel", "options": {"baseUrl": "http://localhost:<chosen local port>", "token": "<my_secret_token>"}}]
 
-inserire nella sezione remote gateway:
-
-    [{ "name": "remote kernel", "options": {"baseUrl": "http://localhost:8888", "token": "<my_secret_token>"}}]
-
-## DAL MENU DI HYDROGEN
-
-selezionare la voce `connect to remote kernel`
+## FROM THE HYDROGEN MENU
+select the `connect to remote kernel` item
 

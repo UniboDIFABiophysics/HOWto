@@ -24,7 +24,7 @@ to do this, you have to add to the ssh config file found in `~/.ssh/config` (if 
         LocalForward    <remote port number> localhost:<local port number>
         ServerAliveInterval 240
         
-* the `User` setting is your unibo account, that will make it easier to do the ssh login
+* the `User` setting is your unibo account, that will make it easier to do the ssh login. Students should insert the full email account in the form `name.surname@studio.unibo.it`
 * `LocalForward` perform the tunnelling. This is the most important one.
   It can be used multiple times if one wants to run multiple services.
 * `ServerAliveInterval` will make sure that the ssh will send a sign of life to the server so that 
